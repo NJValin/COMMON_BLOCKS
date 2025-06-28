@@ -1,10 +1,10 @@
 `default_nettype none
 
 module clock_divider (
-	input logic clk_in,
-	input logic rstn,
-	input int   int_div,
-	output logic clk_out
+	input  logic          clk_in,
+	input  logic          rstn,
+	input  logic [31:0]   int_div,
+	output logic         clk_out
 	);
 
 	int sync_div;
