@@ -1,5 +1,9 @@
 .utils/venv
-.utils/venv
 
 sim_results
 sim_results/*
+
+sim_results
+sim_results/*
+
+*.vcd
