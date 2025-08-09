@@ -1,0 +1,6 @@
+[verilog]
+include_paths = ["$UVM_HOME", "./**/*.sv", "./**/*.svh", "./**/*.v"]
+defines = ["DEBUG", "VAR=1"]
+
+[option]
+linter = true

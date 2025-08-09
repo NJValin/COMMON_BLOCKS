@@ -1,3 +1,7 @@
+///////////////////////////////////////////////////////
+// Copyright (c) 2025 Neil Valin. All Rights Reserved.
+//
+///////////////////////////////////////////////////////
 `default_nettype none
 
 module data_buffer #(
@@ -23,7 +27,7 @@ module data_buffer #(
 
 	assign max_index    = DEPTH-1;
 	assign buffer_full  = ~&(max_index ^ write_pointer); // buffer is full if max_index = write_pointer
-	assign buffer_empty = ~&write_pointer; // Unary NAND to 
+	assign buffer_empty = ~&write_pointer; // Unary NAND to check if the pointer is 0
 
 	assign data_out     = buffer[0];
 

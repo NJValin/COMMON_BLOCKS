@@ -1,6 +1,11 @@
+///////////////////////////////////////////////////////
+// Copyright (c) 2025 Neil Valin. All Rights Reserved.
+// ----------------------------------------------------
+//
+///////////////////////////////////////////////////////
 `default_nettype none
 
-module ndff_bit_sync #(
+module bit_sync #(
 		parameter NUM_OF_FLOPS = 2
 	)
 	(
