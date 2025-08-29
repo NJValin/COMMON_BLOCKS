@@ -2,20 +2,22 @@
 
 module bit_sync_tb;
 
-	localparam int num_ff = 2;
+	localparam num_ff = 2;
 
 	logic data_test;
 	logic data_out;
 	logic source_clk=0;
 	logic destination_clk=0;
+	logic sync_pulse;
 	logic rstn = 1;
 	
 
-	ndff_bit_sync dut (
+	synchronze_bit #(3, 1) dut (
 		.D_in(data_test),
 		.dest_clk(destination_clk),
 		.rstn(rstn),
-		.D_out(data_out)
+		.D_out(data_out),
+		.sync_pulse(sync_pulse)
 	);
 
 	initial begin
