@@ -1,6 +1,6 @@
 #!/bin/sh -w
 
-export PROJDIR="$HOME/IP/COMMON"
+export PROJDIR="$HOME/IP/COMMON_BLOCKS"
 export SVLINT_CONFIG="$PROJDIR/.utils/.svlint.toml"
 export SVLINT_INCDIRS="$PROJDIR"
 
@@ -9,5 +9,3 @@ if [ ! -d ".utils/venv" ]; then # if the directory doesn't exist
 	sed -i 's/(venv)/(IP)/g' ./.utils/venv/bin/activate
 fi
 source .utils/venv/bin/activate
-
-source $VIVADO_HOME/settings64.sh
